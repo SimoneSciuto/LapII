@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/sfondo">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="  Nome :"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="8dip"
+        android:textSize="@dimen/activity_horizontal_margin"
+        android:textStyle="bold|italic" />
+    <TextView
+        android:id="@+id/view_nome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textSize="30dp"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="  Cognome :"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="8dip"
+        android:textSize="@dimen/activity_horizontal_margin"
+        android:textStyle="bold|italic" />
+    <TextView
+        android:id="@+id/view_cognome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textSize="30dp"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="  E-mail :"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="8dip"
+        android:textSize="@dimen/activity_horizontal_margin"
+        android:textStyle="bold|italic" />
+    <TextView
+        android:id="@+id/view_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textSize="30dp"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="  Sesso :"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="8dip"
+        android:textSize="@dimen/activity_horizontal_margin"
+        android:textStyle="bold|italic" />
+    <TextView
+        android:id="@+id/view_sesso"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textSize="30dp"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="  Altezza :"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="8dip"
+        android:textSize="@dimen/activity_horizontal_margin"
+        android:textStyle="bold|italic" />
+    <TextView
+        android:id="@+id/view_altezza"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textSize="30dp"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="  Colore Capelli :"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="8dip"
+        android:textSize="@dimen/activity_horizontal_margin"
+        android:textStyle="bold|italic" />
+    <TextView
+        android:id="@+id/view_capelli"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textSize="30dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indietro"
+        android:id="@+id/back1"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:layout_below="@id/view_capelli"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

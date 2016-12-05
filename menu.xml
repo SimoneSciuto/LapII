@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/sfondo">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Menù"
+        android:id="@+id/menu"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#6d0942ff"
+        android:textSize="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold|italic" />
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Profilo"
+        android:id="@+id/profilo"
+        android:textColor="#ffffff"
+        android:background="@drawable/sfondo_bottoni"
+        android:layout_below="@+id/menu"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuovo o Modifica"
+        android:id="@+id/new_change"
+        android:textColor="#ffffff"
+        android:background="@drawable/sfondo_bottoni"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/profilo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Condividi su Facebook"
+        android:id="@+id/sharedFB"
+        android:background="@drawable/sfondo_bottoni"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/new_change"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:id="@+id/logout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/sfondo_bottoni"
+        android:textColor="#ffffff"
+        android:layout_alignEnd="@+id/menu"
+        android:layout_alignStart="@+id/menu" />
+
+</RelativeLayout>

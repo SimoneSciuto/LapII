@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sfondo">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Benvenuto nel mio Progetto Android !"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:gravity="center|center_vertical"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Se hai un amico che ti ha fatto conoscere l&apos;app e vuoi premiarlo puoi farlo!"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Nome"
+        android:ems="10"
+        android:id="@+id/nomeA"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Cognome"
+        android:ems="10"
+        android:id="@+id/cognomeA"
+        android:layout_below="@+id/nomeA"
+        android:layout_alignEnd="@+id/nomeA" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nessuno"
+        android:id="@+id/nessuno"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/premio"
+        android:layout_marginEnd="47dp"
+        android:background="@drawable/sfondo_bottoni" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Premialo !"
+        android:id="@+id/premio"
+        android:layout_alignTop="@+id/nessuno"
+        android:layout_toEndOf="@+id/cognomeA"
+        android:background="@drawable/sfondo_bottoni" />
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contextClickable="false"
+    android:background="@drawable/sfondo"
+    android:clickable="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Nome"
+        android:ems="100"
+        android:id="@+id/nome"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Cognome"
+        android:ems="100"
+        android:id="@+id/cognome"
+        android:layout_below="@+id/nome"
+        android:layout_alignStart="@+id/nome"
+        android:textStyle="bold|italic" />
+
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/cognome"
+        android:id="@+id/sesso"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="  Sesso: "
+            android:ems="2"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:id="@+id/testo1"
+            android:layout_alignLeft="@id/sesso"
+            android:textStyle="bold|italic"
+            android:layout_weight="0.11"
+            android:gravity="center_vertical" />
+
+        <RadioButton android:id="@+id/maschio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M  "
+            android:checked="true"/>
+
+        <RadioButton android:id="@+id/femmina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="F  "/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="  Altezza:  "
+        android:id="@+id/altezza"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold|italic"
+        android:layout_alignTop="@+id/altezzaCM"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignWithParentIfMissing="false"
+        android:autoText="false"
+        android:layout_alignBottom="@+id/altezzaCM"
+        android:gravity="center_vertical"
+        android:numeric="decimal" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:hint="centimetri"
+        android:id="@+id/altezzaCM"
+        android:layout_below="@+id/sesso"
+        android:layout_toEndOf="@+id/altezza" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Colore capelli:"
+        android:textSize="@dimen/activity_horizontal_margin"
+        android:textStyle="bold|italic"
+        android:id="@+id/capelliText"
+        android:layout_alignTop="@+id/capelli"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/capelli"
+        android:gravity="center_vertical" />
+    <Spinner
+        android:id="@+id/capelli"
+        android:textSize="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/coloreCapelli"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/altezzaCM"
+        android:layout_toEndOf="@+id/capelliText" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invio"
+        android:id="@+id/insDati"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/capelli"
+        android:layout_alignEnd="@+id/altezzaCM"
+        android:layout_marginTop="48dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indietro"
+        android:id="@+id/back"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/insDati"
+        android:layout_toEndOf="@+id/altezza" />
+
+
+</RelativeLayout>

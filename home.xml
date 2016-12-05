@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.simone.mylap2.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Benvenuto nella mia App di LAP2 ovvero: Programmazione Android ! "
+        android:textSize="20dp"
+        android:id="@+id/title"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrati alla mia App e completa il tuo profilo, potrai condividerlo su Facebook e vedere quante persone l'avranno visualizzato!"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/title"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="Email"
+        android:id="@+id/emailReg"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:background="@drawable/android_omino"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/emailReg"
+        android:layout_toStartOf="@+id/emailReg"
+        android:layout_alignBottom="@+id/pswReg" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Password"
+        android:id="@+id/pswReg"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/imageView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entra"
+        android:id="@+id/login"
+        android:layout_below="@+id/imageView"
+        android:layout_toStartOf="@+id/pswReg"
+        android:layout_marginTop="61dp"
+        android:textColor="#ffffff"
+        android:background="@color/colorBluePrincipale" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrati"
+        android:id="@+id/reg"
+        android:layout_marginEnd="54dp"
+        android:layout_alignTop="@+id/login"
+        android:layout_alignEnd="@+id/pswReg"
+        android:textColor="#ffffff"
+        android:background="@color/colorBluePrincipale" />
+
+</RelativeLayout>
